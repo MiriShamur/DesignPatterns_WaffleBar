@@ -12,19 +12,6 @@ namespace DPProj.Strategy
     {
         public override string Read()
         {
-            #region readToOrder
-            /* string str = File.ReadAllText(@"C:\Users\User\Desktop\DPProj\last Orders.json");*/
-            // tbOrders.Text = str;
-            // List<Order> weatherForecasts =JsonSerializer.Deserialize<List<Order>>(str)!;
-
-            //  List<Order> orders = new List<Order>();
-            // dgvLaslOrder.DataSource = "";
-
-            /*   foreach (var item in str)
-               {
-                   //צריך להמיר כל שורה בjson לתוך lastorders
-               }*/
-            #endregion
             FileStream fs = new FileStream(@"C:\Users\User\Desktop\שנה ב\c#\ש.ב\מחצית ב\שרה פרידרויצר ומירי שמור פרויקט design pattern\DPProj\last Orders.json",
             FileMode.Open,
                                      FileAccess.Read);
