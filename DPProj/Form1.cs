@@ -92,15 +92,8 @@ namespace DPProj
         private void BtnSName_Click(object sender, EventArgs e)
         {
            string str= json.Read();
-           /* FileStream fs = new FileStream(@"C:\Users\User\Desktop\שנה ב\c#\ש.ב\מחצית ב\שרה פרידרויצר ומירי שמור פרויקט design pattern\DPProj\last Orders.json",
-            FileMode.Open,
-                                     FileAccess.Read);
-            StreamReader reader = new StreamReader(fs);
-            string str = reader.ReadLine(); */
-            List<Order> last = lastOrders.FindAll(l => l.Phon == tbPn.Text);
-            dgvLaslOrder.DataSource = last;
-            /*reader.Close();
-            fs.Close();*/
+           List<Order> last = lastOrders.FindAll(l => l.Phon == tbPn.Text);
+           dgvLaslOrder.DataSource = last;
         }
         private void RbRoundBelgianWaffle_CheckedChanged(object sender, EventArgs e)
         {
