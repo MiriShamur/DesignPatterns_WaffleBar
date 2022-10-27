@@ -39,7 +39,6 @@ namespace DPProj.Command
         {
             Add(waiter);
             Orders.Enqueue(o);
-            //new Order(o.Shape, o.Name, o.OrderNumber, o.IsChocolate, o.IsSauce, o.IsTea, o.IsCoffee, o.IsWater, o.IsCoke)
         }
         public Product TheCookCreate()
         {
